@@ -12,7 +12,7 @@ setuptools.setup(
     description="A collection of data science functions",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/rassamyjs/lambdata-20-try2",
     packages=setuptools.find_packages(),
     install_requires=REQUIRED,
     classifiers=[
