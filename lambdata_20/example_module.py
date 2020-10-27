@@ -9,11 +9,11 @@ FAVORITE_NUMBERS = [3.71, 101, 55, 12, 3.14]
 
 def df_nullsum(df):
     """counts null values"""
-    df.isnull().sum().sum()
-    # TODO - implement df_cleaner
+    print(df.isnull().sum().sum())
+    
     pass
 
 def df_shuffle(df):
     """shuffles df"""
-    df.sample(frac =1)
+    print(df.sample(frac =1))
     pass
