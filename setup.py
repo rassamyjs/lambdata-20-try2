@@ -6,7 +6,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="lambdata-rassamyjs", # Replace with your own username
+    name="lambdata_rassamyjs", # Replace with your own username
     version="0.0.1",
     author="rassamyjs",
     description="A collection of data science functions",
