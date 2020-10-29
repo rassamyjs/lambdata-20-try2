@@ -82,10 +82,17 @@ class Person():
     self.bloodtype = str(bloodtype)
     self.haircolor = str(haircolor)
 
+
   def birthday(self):
+    """
+    Increases age by 1
+    """
     return self.age + 1
 
   def hairchange(self, color):
+    """
+    changes the hair color
+    """
     return str(color)
 
 
@@ -107,3 +114,4 @@ if __name__ == '__main__':
   print('Hello, {}! my name is {}, nice to meet you!'.format(name.name, name1.name))
   print("Today's birthday is {}! he is turning {}.".format(name.name, name.birthday()))
   print("{}'s hair is the color {}. He wants to dye it to match {}'s hair. {}'s hair is now {}.".format(name.name, name.haircolor, name1.name, name.name, name.hairchange('blond')))
+  

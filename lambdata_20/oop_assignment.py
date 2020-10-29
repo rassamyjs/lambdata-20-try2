@@ -40,3 +40,6 @@ if __name__ == '__main__':
     store2 = Store('Fake', 'Groceries', 7, 2000, 'Park City')   
 
     print('name: {} is a large store: {} and has: {} isles.'.format(store1.name, store1.large_store(), store1.isles))
+
+
+
