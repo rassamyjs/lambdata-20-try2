@@ -74,6 +74,22 @@ class Sloth(Animal):
   def run(self):
     return "I am slow sloth guy"
 
+
+class Person():
+  def __init__(self, name, age, bloodtype, haircolor):
+    self.name = str(name)
+    self.age = int(age)
+    self.bloodtype = str(bloodtype)
+    self.haircolor = str(haircolor)
+
+  def birthday(self):
+    return self.age + 1
+
+  def hairchange(self, color):
+    return str(color)
+
+
+
 # This condition will only hold true if the module is ran (python oop_example.py) and not imported
 if __name__ == '__main__':
   num1 = Complex(3, 5)
@@ -86,5 +102,8 @@ if __name__ == '__main__':
   user4 = SocialMediaUser('George Washington', 'Djibouti', 2)
   print('name: {}, is popular: {}, num upvotes: {}'.format(user4.name, user4.is_popular(), user4.upvotes))
   print('name: {}, is popular: {}, num upvotes: {}'.format(user3.name, user3.is_popular(), user3.upvotes))
-
-
+  name = Person('Justin', 17, 'o', 'black')
+  name1 = Person('Joe', 25, 'b', 'blond')
+  print('Hello, {}! my name is {}, nice to meet you!'.format(name.name, name1.name))
+  print("Today's birthday is {}! he is turning {}.".format(name.name, name.birthday()))
+  print("{}'s hair is the color {}. He wants to dye it to match {}'s hair. {}'s hair is now {}.".format(name.name, name.haircolor, name1.name, name.name, name.hairchange('blond')))

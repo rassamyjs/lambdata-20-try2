@@ -10,6 +10,8 @@ OOP assignment for module 2:
 Self will be put in to describe your class. In this instance, 
     self will mean Store
 """
+import pandas as pd
+import numpy as np
 
 class Store:
     def __init__(self, name, storetype, isles, sqft, location):
